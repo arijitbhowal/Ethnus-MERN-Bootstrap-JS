@@ -39,7 +39,7 @@ body {
   }
 
   input[type="submit"] {
-    background-color: #007bff;
+    background-color: #ff1100;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -49,5 +49,11 @@ body {
   }
 
   input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #f87748;
+  }
+  .error {
+    color: red;
+  }
+  .error-input {
+    border-color: red !important;
   }

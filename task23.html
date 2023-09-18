@@ -6,27 +6,50 @@
   </head>
   <body>
     <h1>Javascript Task 5</h1>
-    <form action="process_form.php" method="post">
+    <form action="process_form.php" method="post" id="myForm">
       <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required /><br /><br />
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        name="name"
+        placeholder="Name"
+      />
+      <span class="error" id="nameError"></span><br /><br />
 
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required /><br /><br />
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        name="email"
+        placeholder="Email"
+      />
+      <span class="error" id="emailError"></span><br /><br />
 
       <label for="website">Website:</label>
-      <input type="url" id="website" name="website" /><br /><br />
+      <input
+        type="url"
+        class="form-control"
+        id="website"
+        name="website"
+        placeholder="Website"
+      />
+      <span class="error" id="websiteError"></span><br /><br />
 
       <label for="message">Message:</label><br />
       <textarea
         id="message"
+        class="form-control"
         name="message"
         rows="4"
         cols="50"
-        required
-      ></textarea
-      ><br /><br />
+        placeholder="Message"
+      ></textarea>
+      <span class="error" id="messageError"></span><br /><br />
 
-      <input type="submit" value="Submit" />
+      <input type="submit" value="Submit" class="form-control" />
     </form>
+    <script src="script/script7.js"></script>
   </body>
 </html>
